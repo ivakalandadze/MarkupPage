@@ -292,7 +292,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 89%;
+    width: 88.8%;
     height: 16.06em;
     padding: 0 2.75em;
 }
@@ -368,6 +368,71 @@ nav {
     color: #010101;
 }
 .news-boxes {
-    margin-top: 2.63em;
+    padding: 2.63em 5em;
+    width: 88.8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news-box {
+    width: 18.88em;
+    height: 23.88em;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.news-box-img {
+    margin-top: 1em;
+    border-radius: 1.5em 1.5em 0 0;
+    object-fit: cover;
+    width: 17.25em;
+    height: 13.38em;
+    
+}
+
+.news-box-header {
+    direction: rtl;
+    margin-top: 1.38rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.63rem;
+    text-align: center;
+    color: #000000;    
+}
+.news-box-p {
+    margin-top: 0.38rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.00rem;
+    line-height: 1.31rem;
+    text-align: center;
+    max-width: 15.25rem;
+}
+
+.news-box-anchor {
+    display: flex;
+    align-items: flex-start;
+}
+.news-expand-icon {
+    margin-top: 1.38em;
+    margin-right: 0.38em;
+}
+.news-anchor {
+    margin-top: 1rem;
+    direction: rtl;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13rem;
+    line-height: 1.50rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #004990;
+}
