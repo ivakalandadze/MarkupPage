@@ -746,5 +746,74 @@ nav {
     text-align: center;
     letter-spacing: -0.02em;
     color: #004990;
-    background: transparent;
+    background: transparent ;
+}
+
+/* Customers */
+
+.customers {
+    margin-top: 7.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.customers-smaller-header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.13rem;
+    line-height: 1.50rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+.customers-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.88rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: #000000;
+}
+.customers-img{
+    margin-top: -2em;
+}
+.feedback {
+    direction: rtl;
+    width: 33.75rem;
+    height: 5.75rem;
+    margin-top: -2.39rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.50rem;
+    line-height: 1.94rem;
+    text-align: center;
+    color: #000000;
+}
+.customers-buttons {
+    margin-top: 1.56em;
+    width: 26.61em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.customers-button{
+    width: 12.8rem;
+    height: 3.88rem;
+    border: 0.16rem solid #F15B62;
+    filter: drop-shadow(0px 4px 14px rgba(248, 173, 157, 0.4));
+    border-radius: 3.19rem;
+    font-weight: 700;
+    font-size: 1.50rem;
+    line-height: 1.94rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+.volunteer{
+    background-color: transparent;
+    color: #F15B62;
+}
+.donate {
+    background-color: #F15B62;
+    color: #FFFFFF;
 }
