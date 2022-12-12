@@ -817,3 +817,48 @@ nav {
     background-color: #F15B62;
     color: #FFFFFF;
 }
+
+/* Explanatory section */
+
+.explanatory{
+    margin-top: 7.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.explanatory-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.88rem;
+    line-height: 2.88rem;
+    text-align: center;
+    color: #000000;
+}
+.video-wrapper {
+    position: relative;
+    margin-top: 2.63em;
+    width: 60.00em;
+    height: 33.75em;
+    background: rgba(1, 1, 1, 0.2);
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/Video.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0em -3em;
+    z-index: 0;
+}
+.video-cover {
+    position: absolute;
+    width: 60.00em;
+    height: 33.75em;
+    background: rgba(1, 1, 1, 0.2);
+    z-index: 2;
+}
+.play-icon {
+    position: absolute;
+    z-index: 1;
+}
