@@ -4,6 +4,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 'Assistant';
+    z-index: 0;
 }
 html {
     font-size: 16px
@@ -779,6 +780,7 @@ nav {
     margin-top: -2em;
 }
 .feedback {
+    overflow: hidden;
     direction: rtl;
     width: 33.75rem;
     height: 5.75rem;
@@ -1243,8 +1245,6 @@ form {
     display: flex;
     justify-content: flex-start;
 }
-.footer-icon-1 {
-}
 .footer-icon-2 {
     margin-right: 3.74px;
 }
@@ -1301,4 +1301,22 @@ form {
     line-height: 1.13rem;
     text-align: center;
     color: #000000;
+}
+
+/* Elipses */
+
+.big-elipse-1 {
+    position: absolute;
+    margin-top: 42.81em;
+    margin-left: 39.31em;
+}
+.big-elipse-2 {
+    position: absolute;
+    top: 104.55em;
+    left: -0.11em;
+}
+.big-elipse-3 {
+    position: absolute;
+    top: 2849px;
+    left: 770px;
 }
