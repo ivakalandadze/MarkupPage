@@ -121,7 +121,6 @@ nav {
     color: white;
     margin-top: 0.19rem;
 }
-
 .contacts {
     display: flex;
     align-items: center;
@@ -267,13 +266,12 @@ nav {
     display: flex;
     align-items: center;
     text-align: right;
-    
     color: #000000;
-    
     opacity: 0.5;    
 }
 
-/* Get Started section */
+/* Get Started section -----------------------------------------------*/
+
 .get-started {
     margin-top: 34.56em;
     display: flex;
@@ -325,6 +323,7 @@ nav {
     position: absolute;
     margin-top: 2.06em;
     margin-left: 1.43em;
+    z-index: 1;
 }
 .icon-1 {
     align-self: flex-end;
@@ -352,7 +351,8 @@ nav {
     z-index: 1;
 }
 
-/* News section */
+/* News section -----------------------------------------------------*/
+
 .news{
     margin-top: 5.19em;
     display: flex;
@@ -438,7 +438,7 @@ nav {
     color: #004990;
 }
 
-/* Facts Section */
+/* Facts Section ------------------------------------------------------*/
 
 .facts{
     margin-top: 5.13em;
@@ -820,7 +820,7 @@ nav {
     color: #FFFFFF;
 }
 
-/* Explanatory section */
+/* Explanatory section ------------------------------------------------*/
 
 .explanatory{
     margin-top: 7.75em;
@@ -858,14 +858,15 @@ nav {
     width: 60.00em;
     height: 33.75em;
     background: rgba(1, 1, 1, 0.2);
-    z-index: 2;
+    z-index: 1;
 }
 .play-icon {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
-/* Footer */
+ /* Footer ----------------------------------------------------------- */
+
 footer {
     margin-top: 7.75em;
     width: 100%;
