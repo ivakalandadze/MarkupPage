@@ -6,71 +6,53 @@
     z-index: 0;
     font-size: 16px;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 html {
     font-size: 16px
 }
 button {
     cursor: pointer;
 }
-a {
-    cursor: pointer;
-    text-decoration: none;
-    border: none;
-}
 .header{
-    width: 100%;
     display: flex;
     justify-content: center;
-    height: 40.7em;
 }
-.header-background{
-    justify-self: center;
+.header-elipse {
     position: absolute;
-    max-width: 1440px;
-    width: 100%;
-    height: 100%;
-    background-image: url(images/Background_elipse.jpg);
+    width: 165.63em;
+    height: 118.63em;
+    top: -78.31em;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(images/background.jpeg);
     background-repeat: no-repeat;
-
+    background-position: 17.6em 78.31em;
+    background-size: 71.8% 49%;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+    z-index: 0;
 }
 .background-img {
     position: absolute;
+    width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 0;
 }
 .grad {
-    float: left;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 39.94em;
+    left: 0;
+    top: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-    z-index: 1;
+    z-index: 2;
 }
 nav {
+    z-index: 3;
     width: 100%;
-    overflow: hidden;
     height: 6.13em;
-    margin: 1.81em 5.00em;
+    padding: 1.81em 5.00em;
     align-items: center;
     display:flex;
     justify-content: space-between;
-    z-index: 2;
-}
-@media screen and (min-width:1450px) {
-    nav {
-        width: 1360px;
-        overflow: hidden;
-        height: 6.13em;
-        margin: 1.81em 5.00em;
-        align-items: center;
-        display:flex;
-        justify-content: space-between;
-        z-index: 2;
-    }
 }
 .left-nav{
     display: flex;
@@ -97,27 +79,12 @@ nav {
     letter-spacing: -0.02em;
     color: #FFFFFF;
 }
-.language-select {
-    width: fit-content;
-    position: relative;
-    align-items: center;
-}
-select {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    position: absolute;
-    background-color: transparent;
-    color: transparent;
-    border: none;
-}
 #dropdown {
     cursor: pointer;
     width: 2.88em;
     height: 1.63em;
     margin-left: 1.25em;
     margin-right: 1.25em;
-    margin-top: 0.3em;
 }
 .header-icon {
     width: 7.56em;
@@ -128,8 +95,7 @@ select {
     border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
 .header-search-div{
-    background-color: transparent;
-    border: none;
+    cursor: pointer;
     width: 1.75em;
     height: 2.69em;
     margin-left: 1.38em;
@@ -138,8 +104,7 @@ select {
     align-items: center;
 }
 .header-bell-div{
-    background-color: transparent;
-    border: none;
+    cursor: pointer;
     width: 2.38em;
     height: 2.69em;
     margin-left: 0.88em;
@@ -181,7 +146,6 @@ select {
     color: #FFFFFF;
 }
 #contact-text {
-    text-decoration: none;
     cursor: pointer;
     margin-left: 0.88rem;
     font-style: normal;
@@ -257,9 +221,6 @@ select {
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
 }
 .header-expand {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
     margin-top: 1em; 
     display: flex;
     justify-content: flex-start;
@@ -311,8 +272,7 @@ select {
 }
 #search-text {
     border: none;
-    width: 60%;
-    height: 90%;
+    width: 80%;
     margin-right: 1.5rem;
     direction: rtl;
     font-weight: 400;
@@ -322,13 +282,13 @@ select {
     align-items: center;
     text-align: right;
     color: #000000;
-    opacity: 0.9;    
+    opacity: 0.5;    
 }
 
 /* Get Started section -----------------------------------------------*/
 
 .get-started {
-    margin-top: 3.6em;
+    margin-top: 34.56em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,16 +305,15 @@ select {
 .start-boxes{
     display: flex;
     align-items: center;
-    gap: 1.13em;
-    max-width: fit-content;
+    justify-content: space-between;
+    width: 88.8%;
+    max-width: 88.8%;
     height: 16.06em;
     padding: 0 2.75em;
 }
 .start-box {
-    cursor: pointer;
-    box-sizing: border-box;
     position: relative;
-    width: 145px;
+    width: 9.06em;
     height: 10.94em;
     background: #FFFFFF;
     box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
@@ -365,7 +324,6 @@ select {
     justify-content: flex-start;
 }
 .box-text {
-    overflow: hidden;
     position: absolute;
     text-align: center;
     font-style: normal;
@@ -431,7 +389,7 @@ select {
     width: 88.8%;
     display: flex;
     align-items: center;
-    gap: 1.50em;
+    justify-content: space-between;
 }
 .news-box {
     width: 18.88em;
@@ -503,6 +461,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 .facts-smaller-header {
     font-style: normal;
@@ -520,21 +479,16 @@ select {
     text-align: center;  
     color: #010101;    
 }
-.fact-circles {
-    width:100vw;
+.circles-wrapper{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    position: relative;
-}
-.circles-wrapper{   
-    width: 1600px;
-    display: flex;
-    justify-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .circle-1 {
     position: absolute;
     margin-top: 15.56em;
-    margin-left: -5.44em;    ;
+    margin-left: -5.44em;
     border-radius: 50%;
     width: 12.94em;
     height: 12.94em;
@@ -543,7 +497,7 @@ select {
 .circle-2 {
     position:absolute;
     margin-top: 2.63rem;
-    margin-left: 6.63em;
+    margin-left: 6.63rem;
     border-radius: 50%;
     width: 16.13rem;
     height: 16.13rem;background: #144A92;
@@ -925,8 +879,6 @@ select {
 .play-icon {
     position: absolute;
     z-index: 2;
-    border: none;
-    background-color: transparent;
 }
 
  /* Footer ----------------------------------------------------------- */
@@ -935,9 +887,6 @@ footer {
     margin-top: 7.75em;
     width: 100%;
     height: 43.94em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .registration {
     overflow: hidden;
@@ -945,28 +894,10 @@ footer {
     width: 100%;
     height: 10.00em;
     display: flex;
-    justify-content: center;
-}
-.reg-elipse-wrapper {
-    display: flex;
-    justify-content: center;
 }
 .registration-elipse-1 {
     position: absolute;
-    margin-left: -3.6em;
-    margin-top: 2.5em;
-    width: 36.38em;
-    height: 17.44em; 
-    border-radius: 50%;
-    background: #A6BDD9;
-    mix-blend-mode: hard-light;
-    opacity: 0.3;
-    transform: rotate(34.14deg);
-    z-index: 0;
-}
-.registration-elipse-2 {
-    position: absolute;
-    margin-right: 68.5em;
+    margin-left: -7.31em;
     margin-top: -2.06em;
     width: 36.38em;
     height: 17.44em; 
@@ -975,13 +906,25 @@ footer {
     mix-blend-mode: hard-light;
     opacity: 0.3;
     transform: rotate(22.98deg);
+    z-index: 0;
+}
+.registration-elipse-2 {
+    position: absolute;
+    margin-left: 25.06em;
+    margin-top: 2.44em;
+    width: 36.38em;
+    height: 17.44em; 
+    border-radius: 50%;
+    background: #A6BDD9;
+    mix-blend-mode: hard-light;
+    opacity: 0.3;
+    transform: rotate(34.14deg);
     z-index:0
 }
 .registration-elipse-3 {
     position: absolute;
-
-    margin-left: 77.44em;
-    margin-top: 7.2em;
+    margin-left: 65.44em;
+    margin-top: 7.19em;
     width: 36.38em;
     height: 17.44em; 
     border-radius: 50%;
@@ -993,7 +936,7 @@ footer {
 }
 .registration-elipse-4 {
     position: absolute;
-    margin-left: 79.3em;
+    margin-left: 66.50em;
     margin-top: -5.56em;
     width: 36.38em;
     height: 17.44em; 
@@ -1006,7 +949,7 @@ footer {
 }
 .registration-elipse-5 {
     position: absolute;
-    margin-left: -40.6em;
+    margin-left: -22.31em;
     margin-top: -17.88em;
     width: 94.06em;
     height: 45.13em; 
@@ -1019,7 +962,7 @@ footer {
 }
 .registration-elipse-6 {
     position: absolute;
-    margin-left: 42.7em;
+    margin-left: 19.38em;
     margin-top: -22.19em;
     width: 94.06em;
     height: 45.13em; 
@@ -1037,8 +980,7 @@ footer {
     height: 10.00em;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.5em
+    justify-content: space-between;
 }
 form {
     padding: 3em 0 3em 5em;
@@ -1085,7 +1027,6 @@ form {
     justify-content: center;
     align-items: flex-start;
     padding-right: 5.06em;
-    margin-left: 1.63em;
     margin-top: -0.31em;
 }
 .registration-smaller-text {
@@ -1109,19 +1050,18 @@ form {
 
 .footer-info {
     display: flex;
-    justify-content: center;    
+    justify-content: flex-end;    
     width: 100%;
     height: 22.38em;
     background: rgba(36, 60, 204, 0.05);
 }
 .footer-left-info{
     display: flex;
+    justify-content: flex-end;
 }
 .footer-right-info {
-    margin-right: -3.3em;
-    margin-left: 8.2em;
+    margin-right: 5.06em;
     display: flex;
-    gap:22px
 }
 .info-header, .contr-header, .contact-header, .follow-header {
     font-family: 'Work Sans';
@@ -1141,12 +1081,24 @@ form {
     color: #000000;
 }
 .div-1, .div-2, .div-3, .contact-info{
-    width: 194px;
     margin-top: 3.50em;
+    margin-left: 24px;
     height: 15.00em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.div-1 {
+    margin-left: 4.63em;
+}
+.div-2 {
+    margin-left: 3.81em;
+}
+.div-3 {
+    margin-left: 2.75em;
+}
+.contact-info {
+    margin-left: 8.44em;
 }
 .line {
     width: 1.38em;
@@ -1180,7 +1132,6 @@ form {
     margin-top: 1.5rem;
 }
 .social-icons{
-    cursor: pointer;
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -1223,7 +1174,6 @@ form {
     margin-top: 0.94rem;
 }
 .badge-icons {
-    cursor: pointer;
     margin-top: 1.13em;
     display: flex;
     align-items: center;
@@ -1252,6 +1202,7 @@ form {
     font-weight: 300;
     font-size: 0.88rem;
     line-height: 1.31rem;
+    /* or 150% */
     text-align: right;
     color: #000000;
 }
@@ -1271,16 +1222,10 @@ form {
     padding-right: 5.06em;
 }
 .powered {
-    font-weight: 400;
-    font-size: 0.88rem;
-    line-height: 1.13rem;
-    text-align: right;
-    letter-spacing: -0.02em;
-    color: #000000;
-    margin-right: 0.4em;
+    margin-right: 0.45em;
 }
 .rights img {
-    margin-right: 0.5em;
+    margin-right: 0.7em;
 }
 .horizontal-line{
     font-style: normal;
@@ -1289,14 +1234,8 @@ form {
     line-height: 1.06rem;
 }
 .copyright{
-    font-weight: 400;
-    font-size: 0.88rem;
-    line-height: 1.13rem;
-    text-align: right;
-    letter-spacing: -0.02em;
-    color: #000000;
     direction: rtl;
-    padding-left: 0.6em;
+    padding-left: 0.7em;
 }
 .footer-icons {
     display: flex;
@@ -1319,13 +1258,9 @@ form {
     color: #000000;
 }
 .footer-icons-wrapper {
-    cursor: pointer;
     margin-top: 0.63em;
     display: flex;
     justify-content: flex-start;
-}
-.icon-text {
-    overflow: hidden;
 }
 .footer-icon-2 {
     margin-right: 3.74px;
@@ -1388,20 +1323,17 @@ form {
 /* Elipses */
 
 .big-elipse-1 {
-    z-index: -1;
     position: absolute;
     margin-top: 42.81em;
-    right: 0.05em;
+    margin-left: 39.31em;
 }
 .big-elipse-2 {
-    z-index: -1;
     position: absolute;
     top: 104.55em;
     left: -0.11em;
 }
 .big-elipse-3 {
-    z-index: -1;
     position: absolute;
-    top: 178.06em;
-    right: 0.44em;
+    top: 2849px;
+    left: 770px;
 }
