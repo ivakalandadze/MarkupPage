@@ -28,22 +28,36 @@ a {
     justify-content: center;
     height: 40.7em;
 }
-.header-background{
-    justify-self: center;
+
+/* ეს არი მერე გაკეთე plan b ფიგმაზე უკვე მოჭრილი ბექგრაუნდი ავიღე 
+და ფიქსირებული ზომით გავცენტრე, header section შია და მაგიტო მაქ აბსოლუტი
+ზევიდან რო აგდაეწეროს ნავ ბარი და რაღაცეები */
+/* .header-background{
+    justify-self: center;    
     position: absolute;
     max-width: 1440px;
     width: 100%;
     height: 100%;
     background-image: url(images/Background_elipse.jpg);
     background-repeat: no-repeat;
-
-}
-.background-img {
+} */
+/* ეს არი ვარიანტი წესით როგორც უნდა იყოს, თუ არ უნდა დარჩეს თეთრები,
+როგორც მერე მითხრეს ალბათ ეს ვარიანტია რო ეს ელიფსი იყოს და მერე საიზს მიყვებოდეს */
+.header-elipse {
     position: absolute;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 165.63em;
+    height: 118.63em;
+    top: -78.31em;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(images/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: 17.6em 78.31em;
+    background-size: 71.8% 49%;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+    z-index: 0;
 }
 .grad {
-    float: left;
     position: absolute;
     width: 100%;
     height: 39.94em;
